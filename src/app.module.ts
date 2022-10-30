@@ -11,11 +11,7 @@ import { UsersModule } from './users/users.module';
 @Module({
   imports: [TypeOrmModule.forRoot({
     type: 'postgres',
-    host: 'postgresql-85414-0.cloudclusters.net',
-    port: 12420,
-    database: 'test-db',
-    username: 'dappzero',
-    password: 'dappzero',
+
     entities: [User, Profile, Post],
     synchronize: true
   }), UsersModule],
